@@ -8,7 +8,7 @@ class AppliGestion {
 
     public function liste($n)
 	{
-		$appli = Appli::with('user')
+		$appli = Post::with('user')
 		->orderBy('appli.created_at', 'desc')
 		->paginate(4);
 		return compact('appli');
@@ -16,7 +16,7 @@ class AppliGestion {
 
 	public function save()
 	{
-		Appli::create(array(
+		Post::create(array(
 			'nom' => Input::get('nom'),
 			'description' => Input::get('description'),
 			'user_id' => Auth::user()->id

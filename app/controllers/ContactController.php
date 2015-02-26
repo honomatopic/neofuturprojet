@@ -6,6 +6,10 @@ class ContactController extends BaseController {
 		parent::__construct();
 	}
 
+	public function getPass() 
+	{
+		return Hash::make('telecharger');
+	}
 	public function getForm()
 	{
 		return View::make('contact');

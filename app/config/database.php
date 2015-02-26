@@ -16,9 +16,9 @@ return array(
 	'fetch' => PDO::FETCH_CLASS,
 
 	/*
-	|--------------------------------------------------------------------------
+	|--------------------------------------------------------------------------------------------
 	| Default Database Connection Name
-	|--------------------------------------------------------------------------
+	|--------------------------------------------------------------------------------------------
 	|
 	| Here you may specify which of the database connections below you wish
 	| to use as your default connection for all database work. Of course
@@ -29,9 +29,9 @@ return array(
 	'default' => 'mysql',
 
 	/*
-	|--------------------------------------------------------------------------
+	|------------------------------------------------------------------------------------
 	| Database Connections
-	|--------------------------------------------------------------------------
+	|------------------------------------------------------------------------------------
 	|
 	| Here are each of the database connections setup for your application.
 	| Of course, examples of configuring each database platform that is

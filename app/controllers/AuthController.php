@@ -24,10 +24,15 @@ class AuthController extends BaseController {
 		  ->withErrors($this->login_validation->errors())
 		  ->withInput();
 		} else {
+			// $user = array(
+				// 'nom' => Input::get('name'), 
+				// 'motpasse' => Input::get('password')
+			// );			
 			$user = array(
-				'name' => Input::get('name'), 
-				'password' => Input::get('password')
+				'nom' => 'Purpel',
+				'motpasse' => '$2y$10$UwKM/y/PQ2.wPNI5JZ2yZ.6vMYHAz/INk7EgIbjgoA07Lafy629CC'
 			);
+			return Auth::attempt($user, Input::get('souvenir')) ? "ok " : " pas ok ";
 			if(Auth::attempt($user, Input::get('souvenir'))) {
 				return Redirect::intended('appli/liste');
 			}

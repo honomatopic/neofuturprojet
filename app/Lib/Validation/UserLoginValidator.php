@@ -5,7 +5,7 @@ class UserLoginValidator extends BaseValidator {
     public function __construct()
 	{
 		$this->regles = array(
-			'name' => 'required|exists:users'
+			'name' => 'required|exists:utilisateur,nom'
 		);
 	}
 

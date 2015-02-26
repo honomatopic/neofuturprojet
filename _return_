@@ -1,0 +1,14 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#	modified:   app/Lib/Gestion/AppliGestion.php
+#	modified:   app/Lib/Validation/AppliValidator.php
+#	modified:   app/Lib/Validation/UserLoginValidator.php
+#	modified:   app/config/database.php
+#	modified:   app/controllers/AuthController.php
+#	modified:   app/controllers/ContactController.php
+#	modified:   app/models/User.php
+#	new file:   public/password.php
+#
